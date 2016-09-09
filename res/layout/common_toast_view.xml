@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skintouch_data_save_tip_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40.0dip" >
+
+    <ImageView
+        android:id="@+id/cos_toast_icon"
+        android:layout_width="38.0dip"
+        android:layout_height="38.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/common_fail_icon" />
+
+    <TextView
+        android:id="@+id/cos_toast_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minEms="8"
+        android:textColor="#ffa2797d"
+        android:textSize="15.0sp" />
+
+</LinearLayout>

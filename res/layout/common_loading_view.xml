@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_loading_ly"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:background="@drawable/common_toast_normal_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/common_loading_view_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:indeterminateBehavior="cycle"
+                android:indeterminateDrawable="@drawable/common_loading_circle_drawable"
+                android:indeterminateDuration="1"
+                android:interpolator="@android:anim/accelerate_interpolator" />
+
+            <ImageView
+                android:id="@+id/common_loading_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/slidemenu_skintouch_selected" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/common_loading_view_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:text="loading..."
+            android:textColor="#fff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

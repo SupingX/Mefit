@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mefit</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_device_acitivy">DeviceAcitivy</string>
+    <string name="title_activity_personal_setting">PersonalSettingActivity</string>
+
+
+    <!-- dialog -->
+    <string name="net_not_available">网络不可用</string>
+    <string name="server_error">服务器错误</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_sync_data">SyncDataActivity</string>
+    <string name="title_activity_setting_remind">SettingRemindActivity</string>
+    <string name="title_activity_history_sleep">HistorySleepActivity</string>
+    <string name="title_activity_history_sport">HistorySportActivity</string>
+    <string name="up">&lt;</string>
+    <string name="down">></string>
+    <string name="title_activity_count">CountActivity</string>
+    <string name="title_activity_sport_info">SportInfoActivity</string>
+    <string name="title_activity_spalish">SpalishActivity</string>
+    <string name="share">Share</string>
+    <string name="connected">Connect</string>
+    <string name="refresh">Refresh</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="about">About</string>
+    <string name="exit_app">Exit?</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_me">Me</string>
+    <string name="tab_setting">Setting</string>
+    <string name="per_day">/Day</string>
+    <string name="step">Steps</string>
+    <string name="minute">Min</string>
+    <string name="km">KM</string>
+    <string name="kcal">KCal</string>
+    <string name="delete">Delete</string>
+    <string name="statistics">Statistics</string>
+    <string name="sport">Sport</string>
+    <string name="avg">Avg : </string>
+    <string name="step_per_day">Step/Day</string>
+    <string name="rb_step">Steps</string>
+    <string name="rb_time">Time</string>
+    <string name="rb_distance">Distance</string>
+    <string name="rb_cal">Calorie</string>
+    <string name="sleep">Sleep</string>
+    <string name="sleep_deep">Deep</string>
+    <string name="sleep_light">Light</string>
+    <string name="nuknow">Unknow</string>
+    <string name="connect_success">Success</string>
+    <string name="success">Success</string>
+    <string name="connect_fail">Fail</string>
+    <string name="my_device">Device</string>
+    <string name="bonded_device">Device Bonded</string>
+    <string name="nearby_device">Nearby Device</string>
+    <string name="times">Times</string>
+    <string name="hour">Hours</string>
+    <string name="sport_histroy">Sport History</string>
+    <string name="sleep_history">Sleep History</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="sex">Gender</string>
+    <string name="woman">Female</string>
+    <string name="man">Male</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="sleep_time">SleepTime</string>
+    <string name="wake_up">WakeTime</string>
+    <string name="zh_">ZH</string>
+    <string name="en_">EN</string>
+    <string name="birthday">Birthday</string>
+    <string name="sleep_jiance">Sleep monitor</string>
+    <string name="remind_date">Remdate</string>
+    <string name="remind_time">Remtime</string>
+    <string name="disconnect_info">Please connect Mefit first</string>
+    <string name="personal_remind">Personal Reminder</string>
+    <string name="remind_incoming">Incoming Call Reminder</string>
+    <string name="alarm_day">Daily Alarm</string>
+    <string name="remind_long_sit">Stand Ring</string>
+    <string name="remind_birthday">Birthday Reminder</string>
+    <string name="date_">Date</string>
+    <string name="time_">Time</string>
+    <string name="remind_time_point">Hourly Alarm </string>
+    <string name="km_per_hour">KM/H</string>
+    <string name="use_hour">Time</string>
+    <string name="distance">Dis(Km)</string>
+        <string name="distance_inch">Distance(mi)</string>
+    <string name="avg_speed">Averaged Speed</string>
+    <string name="energy_consumption">Calorie</string>
+    <string name="total_distance">Accumulative Distance</string>
+    <string name="total_time">Accumulative Time</string>
+    <string name="total_steps">Accumulative Step</string>
+    <string name="times_per_min">BPM</string>
+    <string name="now_hr">Current Heart Rate</string>
+    <string name="mi">M</string>
+    <string name="cal">Cal</string>
+    <string name="person_setting">Person Setting</string>
+    <string name="long_camera">Remote Camera</string>
+    <string name="searching">Searching</string>
+    <string name="start_search">Start Searching</string>
+    <string name="title_activity_about">AboutActivity</string>
+      <string name="unbind">Remove binding</string>
+    <string name="find_phone">Find mobile phone</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="pls_enable_ble">Please turn on Bluetooth</string>
+    <string name="delete_the_device">Remove bound device ?</string>
+    <string name="seach_device">Search device
+</string>
+    <string name="check_update">Check for updates
+</string>
+    <string name="app_version">App version</string>
+    <string name="pls_connect_mefit">Please connect Mefit first.</string>
+    
+    
+    
+    <string name="unit_metric_distance">km</string>
+    <string name="unit_metric_length">cm</string>
+    <string name="unit_metric_weight">kg</string>
+    <string name="unit_metric_speed">km/h</string>
+    <string name="unit_inch_weight">lb</string>
+    <string name="unit_inch_distance">mi</string>
+    <string name="unit_inch_length">in</string>
+    <string name="unit_inch_speed">mile/h</string>
+    <string name="time_deep_sleep">Deep:</string>
+    <string name="time_light_sleep">Light:</string>
+    <string name="long_sit">Stand Ring</string>
+    <string name="goal">GoalStep</string>
+        
+        
+
+</resources>
