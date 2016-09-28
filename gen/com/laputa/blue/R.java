@@ -9,7 +9,7 @@ package com.laputa.blue;
 public final class R {
 	public static final class id {
 		public static final int lv_device = 0x7f0a0055;
-		public static final int tv_info = 0x7f0a00b8;
+		public static final int tv_info = 0x7f0a00b9;
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f030005;

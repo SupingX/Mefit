@@ -27,6 +27,7 @@
                 android:focusable="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+               android:visibility="invisible"
                 android:src="@drawable/ic_refresh" />
 			
            <!--  <ImageView 

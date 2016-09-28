@@ -19,14 +19,14 @@ public final class R {
 		public static final int ptr_rotate_ani_time = 0x7f010008;
 	}
 	public static final class drawable {
-		public static final int ptr_rotate_arrow = 0x7f020062;
+		public static final int ptr_rotate_arrow = 0x7f020066;
 	}
 	public static final class id {
-		public static final int ptr_classic_header_rotate_view = 0x7f0a006a;
-		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0a0069;
-		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0a0067;
-		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0a0068;
-		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0a006b;
+		public static final int ptr_classic_header_rotate_view = 0x7f0a006b;
+		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0a006a;
+		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0a0068;
+		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0a0069;
+		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0a006c;
 	}
 	public static final class layout {
 		public static final int cube_ptr_classic_default_header = 0x7f03000f;

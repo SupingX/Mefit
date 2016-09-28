@@ -4,10 +4,26 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
     <ImageView
-        android:src="@drawable/spalish"
+        android:src="@drawable/ic_new_bg"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+       />
+      <ImageView
+          android:id="@+id/iv_logo_mefit"
+        android:src="@drawable/ic_new_mefit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+        <ImageView
+        android:src="@drawable/ic_new_watch"
+        android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
        />
 
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mycj.junsda"
     android:versionCode="6"
-    android:versionName="beat1.0.16" >
+    android:versionName="beat1.0.18" >
 
     <uses-sdk
         android:minSdkVersion="18"

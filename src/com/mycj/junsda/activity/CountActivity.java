@@ -116,7 +116,7 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 				// 6.设置图标
 				countSleep.setDatas(sleepDatas,DateUtil.getToday()-1);
 				// 7.设置平均统计
-				String sleepAvgValue = getAvgValue(sleepDatas);
+				String sleepAvgValue = getAvgValue2(sleepDatas);
 				tvSleepValue.setText(sleepAvgValue);
 				isLoadSleepOver = true;
 				closeLoadingDialog();
@@ -170,6 +170,7 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 				// 5.解析数据库的值，解析为float[]
 				float maxValue = 1000;
 				String unit = (String) SharedPreferenceUtil.get(getApplicationContext(), StaticValue.SHARE_UNIT,StaticValue.DEFAULT_UNIT );
+				String sportAvgValueNew = "0";
 				if (historySportsNew != null && historySportsNew.size() > 0) {
 					for (int i = 0; i < historySportsNew.size(); i++) {
 						HistorySportNew historySport = historySportsNew.get(i);
@@ -182,11 +183,12 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 						int sportTime = historySport.getSportTime();
 						float distance = historySport.getDistance();
 						float calorie = historySport.getCalorie();
-						
+					
 						switch (rgCountSport.getCheckedRadioButtonId()) {
 						case R.id.rb_sport_step:
 							sportDatasNew[index-1] = step;
 							maxValue = 10000;
+					
 							break;
 							
 						case R.id.rb_sport_time:
@@ -203,7 +205,6 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 								sportDatasNew[index-1] = ConversionUtil.metricToLnchValue(distance,ConversionUtil.Unit.Distance);
 								maxValue = 1000;
 							}
-					
 						
 							break;
 							
@@ -216,10 +217,27 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 					}
 				}
 				// 6.设置
+				switch (rgCountSport.getCheckedRadioButtonId()) {
+				case R.id.rb_sport_step:
+					sportAvgValueNew = getIntAvgValue(sportDatasNew);
+					break;
+					
+				case R.id.rb_sport_time:
+					sportAvgValueNew = getIntAvgValue(sportDatasNew);
+					break;
+					
+				case R.id.rb_sport_distance:
+					sportAvgValueNew = getAvgValue(sportDatasNew);
+					break;
+					
+				case R.id.rb_sport_cal:
+					sportAvgValueNew = getAvgValue(sportDatasNew);
+					break;
+				}
+	
 				countSport.setMaxValue(maxValue);
 				countSport.setDatas(sportDatasNew,DateUtil.getToday()-1);
 				// 7.设置平均统计
-				String sportAvgValueNew = getAvgValue(sportDatasNew);
 				tvSportValue.setText(sportAvgValueNew);
 				isLoadSportOver = true;
 				closeLoadingDialog();
@@ -273,7 +291,8 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 			finish();
 			break;
 		case R.id.img_more:
-			showMorePop(v);
+//			showMorePop(v);
+			share(mHandler);
 			break;
 	
 		default:
@@ -538,6 +557,33 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 			return "0";
 		}
 	}
+	
+	private String getAvgValue2(float[] sportDatas) {
+		if (sportDatas != null && sportDatas.length > 0) {
+			float total = 0f;
+			int size = sportDatas.length;
+			for (int i = 0; i < size; i++) {
+				total += sportDatas[i];
+			}
+			return String.valueOf((int)(total*1.0f / size));
+		} else {
+			return "0";
+		}
+	}
+	
+	private String getIntAvgValue(float[] sportDatas) {
+		if (sportDatas != null && sportDatas.length > 0) {
+			float total = 0f;
+			int size = sportDatas.length;
+			for (int i = 0; i < size; i++) {
+				total += sportDatas[i];
+			}
+			return String.valueOf((int)(total*1.0f / size));
+		} else {
+			return "0";
+		}
+	}
+	
 	private SimpleAlertDialog sad;
 	
 	private void showMorePop(View v) {
@@ -549,6 +595,7 @@ public class CountActivity extends BaseActivity implements OnClickListener, OnCh
 				public void onShareClick(View v) {
 					// toast("分享");
 					
+//					share(mHandler);
 					share(mHandler);
 				}
 

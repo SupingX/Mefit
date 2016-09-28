@@ -205,7 +205,8 @@ public class SportInfoActivity extends BaseActivity implements OnClickListener {
 			finish();
 			break;
 		case R.id.img_more:
-			showMorePop(v);
+//			showMorePop(v);
+			share(mHandler);
 			break;
 
 		default:

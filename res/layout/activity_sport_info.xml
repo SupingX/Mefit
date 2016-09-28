@@ -48,7 +48,7 @@
             android:focusable="true"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:src="@drawable/ic_nav_more" />
+            android:src="@drawable/ic_more_share" />
     </RelativeLayout>
 
     <RelativeLayout
